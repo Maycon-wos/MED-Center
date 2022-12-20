@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    
+}
+
+.header-container{
+    background-color: #A8DAF1;
+}
+.header-content{
+    display: flex;
+    width: 90%;
+    max-width:1200px;
+    height: 100px;
+    margin: 0 auto;
+    
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+}
+    
+nav span{
+    display: flex;
+    width: 200px;
+    height: 55px;
+    font-size: 3.0rem;
+    color: #fff;
+    cursor: pointer;
+    border: 4px solid #fff;
+    border-radius: 15px;
+    padding-top: 5px;
+    justify-content: center;
+
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6rem;
+    padding: 30px;
+    gap: 30px;
+    list-style: none;
+    cursor: pointer;
+}
+
+nav li{
+    color: #fff;
+    font-weight: 800;
+}
+
+
+nav li:hover{
+    color: rgb(120, 124, 124);
+
+}
+ 
+nav span:hover{
+    color: rgb(120, 124, 124);
+    border: 4px solid rgb(120, 124, 124);
+}
+
+.home{
+    background-image: url(images/estetoscópio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+}
+
+.titulo{
+    position:absolute;
+    top:40%;
+    left: 50%;
+}
+.titulo span{
+    font-size: 14.0rem; color: #fff;
+}
+.titulo h1{
+    font-size: 6.0rem;
+    color: #fff;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;  
+    align-items: center; 
+    width: 100vw;
+    height:900px;
+    background-color: #203C56;
+    margin: 0 auto;
+}
+
+.about-content{
+    max-width: 1200px;
+}
+
+.about h2, h3, span, ul, li, p{
+    
+    max-width: 1200px;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.about h2{
+    font-size: 5.0rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about span{
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.about h3{
+    display: flex;
+    font-size: 4.0rem;
+    margin-top: 50px;
+    align-self: flex-start;
+    
+}
+
+.about p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: start;
+
+}
+
+.about ul{
+    font-size: 2.0rem;
+    text-align: start;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+}
