@@ -203,3 +203,141 @@ nav span:hover{
     width: 60px;
     height: 60px;
 }
+#final-services{
+    margin-bottom: 40px;
+}
+.contato{
+    width: 100%;
+    background-color: #203C56;
+    margin: 0 auto;
+}
+.contato-container{
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    margin:  0 auto;
+    
+    
+}
+.contato-content{
+    border: 6px solid #fff;
+    border-radius: 30px;
+    width: 60%;
+    height: auto;
+    margin: 40px auto;
+
+   
+}
+.contato-content h3{
+font-size: 3.0rem;  
+margin-top: 20px;  
+
+}
+.contato-content h4{
+    font-size: 2.0rem;  
+    margin-top: 20px;  
+    color: #fff;
+    text-align: center;
+    
+    }
+.contato-content p{
+    font-size: 1.9rem;
+    margin-top: 20px;
+}
+
+.midias-sociais{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contato-content img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.convenios{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.convenios-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+   
+}
+.convenios-content h2{
+    font-size: 4.0rem;
+    color: #203C56;
+    text-align: center;
+    margin-top: 40px;
+}
+.convenios-content h3{
+    font-size: 2.0rem;
+    color: #203C56;
+}
+
+.convenios-content button{
+    align-self: center;
+    margin-top: 40px;
+}
+
+
+.convenios-caixa{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    margin: 0 auto 40px auto;
+    
+    
+}
+
+.convenios-content ul{
+     color: #203C56;
+     border: 10px solid #203C56;
+     border-radius: 30px;
+     width: 500px;
+     overflow-y: scroll;
+}
+
+.convenios-content li{
+    color: #203C56;
+    font-size: 2.0rem;
+    font-weight: 800;
+    list-style: none;
+    border: 1px  solid #203C56;
+}
+
+.search-box{
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #203C56;
+    width: 400px;
+    border: 10px solid #203C56;
+    border-radius: 30px;
+
+}
+
+.search-box input{
+    width: 320px;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    font-size: 2.0rem;
+    
+}
+
+.search-box img{
+    margin-right: 10px;
+}
+
