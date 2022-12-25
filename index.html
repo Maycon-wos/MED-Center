@@ -7,47 +7,53 @@
     <title>MED Center</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link   rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
    <header>
-    <div class="header-container">
-        <div class="header-content">
-            <nav>
-                <span>MED Center</span>
-                <ul>
-                    <li>HOME</li>
-                    <li>SOBRE NÓS</li>
-                    <li>ESPECIALIDADES</li>
-                    <li>CONTATO</li>
-                    <li>CONVÊNIOS</li>
-                    <li>TRABALHE CONOSCO</li>
-                 </ul>
-            </nav>
-        </div>
+    <div class="header-opc">
+        <div class="header-container">
+            <div class="header-content">
+                <nav>
+                    <a href="#"> <p>MED Center</p></a>
+                    <ul>
+                        <a href="#link-home"><li href="#home">HOME</li></a>
+                        <a href="#link-about"><li>SOBRE NÓS</li></a>
+                        <a href="#link-especialidades"><li>ESPECIALIDADES</li></a>
+                        <a href="#link-trabalhe"><li>TRABALHE CONOSCO</li></a>
+                        <a href="#link-convenios"><li>CONVÊNIOS</li></a>
+                        <a href="#link-contato"><li>CONTATO</li></a>
+                    </ul>
+                </nav>
+            </div>
+    </div>
 
     </div>
    </header> 
    <section>
-    <div class="home">
+    <div class="home-opc">
         <div class="titulo">
-            <h1>
-                cuidando de <br>
-                <span>VOCÊ</span> 
-                
-             </h1>
+                <h1 id="link-home">Cuidando de <br>
+                    <span>VOCÊ</span>                
+                 </h1>
+                 </div>
+        <div class="seta">
+            <span class="material-symbols-outlined">
+                 keyboard_double_arrow_down
+            </span>
         </div>
+        <div class="home-img"></div>
     </div>
     <div class="about">
 
         <div class="about-content">
-            <h2>Sobre Nós</h2>
-            <span>A MED Center, fica localizada em Minas Gerais, na área central da Cidade de Ouro Branco. Foi fundado em 2001, com a ideia de oferecer atendimento multidisciplinar para a cidade e região.</span>
+            <h2 id="link-about" >Sobre Nós</h2>
+            <p>A MED Center, fica localizada em Minas Gerais, na área central da Cidade de Ouro Branco. Foi fundado em 2001, com a ideia de oferecer atendimento multidisciplinar para a cidade e região.</p>
             <br>
-            <span>A equipe profissional é experiente e altamente qualificada, permanentemente atualizada com os avanços da medicina.</span>
+            <p>A equipe profissional é experiente e altamente qualificada, permanentemente atualizada com os avanços da medicina.</p>
             <br>
-            <span>Com base numa visão de elevados padrões humanos, éticos e técnicos, buscamos a excelência no atendimento à saúde geral do nosso paciente e de sua família.</span>
+            <p>Com base numa visão de elevados padrões humanos, éticos e técnicos, buscamos a excelência no atendimento à saúde geral do nosso paciente e de sua família.</p>
             <h3>Missão</h3>
             <p>Ser um time comprometido em obter alinhamento e harmonização entre os setores da empresa, no sentido de oferecermos ao nosso cliente uma assistência em saúde segura, humana e eficiente.</p>
             <h3>Visão</h3>
@@ -64,7 +70,7 @@
     </div>
     <div class="especialidades">
         <div class="especialidades-content">
-         <h2>Nossos Serviços</h2>
+         <h2 id="link-especialidades">Nossos Serviços</h2>
          <h3>Consulte as Especialidades</h3>
          <div class="cards">
             <div class="card">
@@ -119,28 +125,36 @@
         </div>
 
     </div>
-    <div class="contato">
-        <div class="contato-container">
-            <div class="contato-content">
-
-                <h3>Agende Seu Atendimento</h3>
-                <h4>Horário de Funcionamento</h4>
-                <p>Segunga a Sexta-Feira das 08:00 às 16:00h</p>
-                <p>Endereço: Av. Mariza de Souza Mendes, 877 - Soledade, Ouro Branco-MG</p>
-                <p><span class="material-symbols-outlined">call</span>Telefone: (99) 9 9999-9999</p>
-                <p>medcenter@medcenter.com.br</p>
-                <div class="midias-sociais">
-                    <img src="images/icon-whatsapp.png" alt="logo whatsapp">
-                    <img src="images/icon-facebook.png" alt="logo facebook">
-                    <img src="images/icon-instagram.png" alt="logo instagram">
-                    <img src="images/icon-linkedin.png" alt="logo linkedin">
-                </div>
+    <div class="trabalhe">
+        <div class="trabalhe-content">
+            <h2 id="link-trabalhe">Trabalhe Conosco</h2>
+            <form action="#" method="get" enctype="text/plain">
+                <fieldset>
+                    <label for="">Nome</label>
+                    <input class="campo" type="text" name="nome">
+                    <label  for="">Email</label>
+                    <input class="campo" type="email" name="email">
+                    <label for="">Vagas</label>
+                    <select name="vagas">
+                        <option value="">Auxiliar de Laboratório</option> 
+                        <option value="">Enfermeiro</option> 
+                        <option value="">Farmaceutico</option> 
+                        <option value="">Fisioterapeuta</option> 
+                        <option value="">Médico</option> 
+                        <option value="">Motorista</option> 
+                        </select>
+                        <label for="">Enviar Cúrriculo</label>
+                        <input class="enviar" type="file" name="curriculo" accept="media_type">
+                        <button type="submit" class="btn" placeholder="enviar">Enviar</button>
+                </fieldset>
+                
+                </select>
+            </form>
         </div>
-    </div>
     </div>
     <div class="convenios">
         <div class="convenios-content">
-            <h2>CONVÊNIOS</h2>
+            <h2 id="link-convenios">CONVÊNIOS</h2>
             <h3>Atendemos os principais convênios em Minas Gerais</h3>
             <div class="search-box">
                 <input type="text" class="search-txt" placeholder="Seu Convênio">
@@ -203,12 +217,36 @@
             </div>    
         </div>
     </div>
-   </section>
+    <div class="contato">
+        <div class="contato-container">
+            <div class="contato-content">
 
-
-
-
-
+                <h3 id="link-contato">Agende Seu Atendimento</h3>
+                <h4>Horário de Funcionamento</h4>
+                <p>Segunga a Sexta-Feira das 08:00 às 16:00h</p>
+                <p>Endereço: Av. Mariza de Souza Mendes, 877 - Soledade, Ouro Branco-MG</p>
+                <p><span class="material-symbols-outlined">call</span>Telefone: (99) 9 9999-9999</p>
+                <p>medcenter@medcenter.com.br</p>
+                <div class="midias-sociais">
+                    <img src="images/icon-whatsapp.png" alt="logo whatsapp">
+                    <img src="images/icon-facebook.png" alt="logo facebook">
+                    <img src="images/icon-instagram.png" alt="logo instagram">
+                    <img src="images/icon-linkedin.png" alt="logo linkedin">
+                </div>
+        </div>
+    </div>
+    </div>
+   </section>       
+   <footer>
+    <div class="footer-content">
+        <hr>
+        <p>Desenvolvido por Maycon Souza</p>
+        <p id="marfin-footer">Todos os direitos reservados.<span class="material-symbols-outlined">
+            copyright
+            </span> </p>        
+        </div>
+    </div>
+   </footer>
 
 </body>
 </html>
