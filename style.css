@@ -1,58 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
-    
+    box-sizing: border-box;   
 }
 
 html, body{
     font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;    
 }
+
 .header-opc{
     background-color: #203C56;
 }
 
 .header-container{
     background-color: #A8DAF1;
-    opacity: 0.9;
+    opacity: 1;
+    transition: 2s ease;
 }
 
 .header-container:hover{
-    background-color: #203C56;
-    transition: 2s;
+    background-color: #203C56; 
 }
+
 .header-content{
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100vw;
     max-width:1200px;
-    height: auto;
-    margin: 0 auto;
-    
+    height: 80px;
+   
 }
+
+.header-content a{
+    text-decoration: none;
+
+}
+
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: auto;
-    
-    
+    height: auto;    
 }
 
 nav a{
     text-decoration: none;
-    
 }
     
 .header-content p{
-    font-size: 4.0rem;
+    font-size: 3.0rem;
     font-weight: bold;
 }
 
@@ -69,19 +74,19 @@ nav ul{
 nav li{
     color: #fff;
     font-weight: 800;
+    transition: 0,6s ease;
 }
 
 
 nav li:hover{
     color: #A8DAF1;
-    
-
 }
  
 nav span:hover{
     color: rgb(120, 124, 124);
     border: 4px solid rgb(120, 124, 124);
 }
+
 .home-opc{
     background-color: #A8DAF1;
     width: 100vw;
@@ -90,30 +95,31 @@ nav span:hover{
 
 .home-img{
     background-image: url(images/estetoscópio.jpg);
-    opacity: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 90vh;
     position: relative;
-    opacity: 0.6;
-   
+    opacity: 0.3;  
+    z-index: 1;
 }
-
 
 .titulo{
     position:absolute;
-    top:30%;
-    left: 40%;
+    top:40%;
+    left: 35%;
     overflow: hidden;
+    z-index: 10;
 }
+
 .titulo span{
-    font-size: 16.0rem; color: #fff;
+    font-size: 16.0rem; 
+    color: #fff;
 }
+
 .titulo h1{
     font-size: 7.0rem;
-    color: #fff;
-    
+    color: #fff; 
 }
 
 .seta{
@@ -124,6 +130,7 @@ nav span:hover{
     height:auto;
     width: auto;
 }
+
 .seta span{
     font-size: 6.0rem;
     overflow: hidden;
@@ -137,7 +144,7 @@ nav span:hover{
     display: flex;
     flex-direction: column;  
     align-items: center; 
-    width: 100vw;
+    width: 100%;
     height:auto;
     background-color: #203C56;
     margin: 0 auto;
@@ -145,16 +152,16 @@ nav span:hover{
 
 .about-content{
     max-width: 1200px;
-    margin: 0 auto;
-    
+    min-width: 300px;
+    margin: 0 auto;  
+    padding: 10px;  
 }
 
 .about h2, h3, span, ul, li, p{
     margin-left: 20px;
     max-width: 1200px;
     color: #fff;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .about h2{
@@ -162,18 +169,17 @@ nav span:hover{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .about span{
     font-size: 1.5rem;
-    margin-top: 40px;
-    
+    margin-top: 40px; 
 }
 
 .about h3{
     display: flex;
     font-size: 4.0rem;
     margin-top: 50px;
-    align-self: flex-start;
-    
+    align-self: flex-start;   
 }
 
 .about p {
@@ -181,7 +187,6 @@ nav span:hover{
     margin-top: 20px;
     text-align: start;
     margin-left: 20px;
-
 }
 
 .about ul{
@@ -200,11 +205,11 @@ nav span:hover{
 }
 
 .especialidades-content{
-    width: 50vw;
-    max-width: 1200px;
+    max-width: 1000px;
+    min-width: 300px;
+
     height: auto;
     margin: 0 auto;
-
 }
 
 .especialidades-content h2{
@@ -213,6 +218,7 @@ nav span:hover{
     color: #203C56;
     margin-top: 30px;
 }
+
 .especialidades-content h3{
     text-align: center;
     font-size: 3.0rem;
@@ -237,58 +243,61 @@ nav span:hover{
     align-items: center;
     font-size: 2.5rem;
     justify-content: space-evenly;
-
 }
+
 .card p {
     margin: 0;
 }
+
 .cards img{
     
     width: 60px;
     height: 60px;
 }
+
 #final-services{
     margin-bottom: 40px;
 }
+
 .contato{    
     background-color: #203C56;
         
 }
+
 .contato-container{
     width:100vw ;
     max-width: 1200px;
     height: auto;
     display: flex;
     margin:  0 auto;
-    overflow:hidden;
-    
-    
+    overflow:hidden;    
 }
+
 .contato-content{
     border: 6px solid #fff;
     border-radius: 30px;
     width: 60%;
     height: auto;
     margin: 40px auto;
-
-   
 }
+
 .contato-content h3{
 font-size: 3.0rem;  
 margin-top: 20px;  
-
 }
+
 .contato-content h4{
     font-size: 2.0rem;  
     margin-top: 20px;  
     color: #fff;
     text-align: center;
-    
-    }
+}
+
 .contato-content p{
     font-size: 1.9rem;
     margin-top: 20px;
 }
+
 .contato-content span{
     overflow: hidden;
 }
@@ -319,14 +328,15 @@ margin-top: 20px;
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
-   
 }
+
 .convenios-content h2{
     font-size: 4.0rem;
     color: #203C56;
     text-align: center;
     margin-top: 40px;
 }
+
 .convenios-content h3{
     font-size: 2.0rem;
     color: #203C56;
@@ -337,14 +347,11 @@ margin-top: 20px;
     margin-top: 40px;
 }
 
-
 .convenios-caixa{
     display: flex;
     justify-content: center;
     height: 300px;
-    margin: 0 auto 40px auto;
-    
-    
+    margin: 0 auto 40px auto;   
 }
 
 .convenios-content ul{
@@ -384,11 +391,10 @@ margin-top: 20px;
     border: none;
     text-align: center;
     font-size: 2.0rem;
-    
 }
 
 .search-box img{
-    margin-right: 10px;
+    padding: 0 3px;
 }
 
 .trabalhe{
@@ -400,8 +406,11 @@ margin-top: 20px;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
+    
 }
+
 .trabalhe-content h2{
     text-align: center;
     font-size: 4.0rem;
@@ -410,8 +419,7 @@ margin-top: 20px;
 }
 
 form{
-
-
+    margin-left: 20px;
 }
 
 fieldset{
@@ -457,15 +465,15 @@ select{
     font-weight: 800;
     border: none;
     margin-bottom: 80px;
-
+    margin-top: 30px;
+    transition: 1s;
 }
 
 .btn:hover{
     background-color:  #203C56;
     border: 1px solid #fff;
     color: #fff;
-    transition: 0.6s;
-    }
+}
 
 footer{
     background-color: #203C56;
@@ -481,14 +489,17 @@ footer{
     margin: 0 auto;
     text-align: center;
     align-items: center;
-    
 }
+
 .footer-content p{
     text-align: center;
     font-size: 1.5rem;
 }
+
 .footer-content span{
     font-size: 1.3rem;
+    padding: 0;
+    margin-left: 2px;
     }
 .footer-content hr{
     width: 100%
@@ -496,4 +507,210 @@ footer{
 
 #marfin-footer{
     margin-bottom: 10px;
+}
+
+
+@media (max-width: 1200px){
+
+    .logo a p {
+        font-size: 2.0rem;
+    }
+    .nav-container nav a{
+        font-size: 1.0rem;
+       
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .header-content nav{
+        display: none;
+    }
+    
+    .one,
+    .two,
+    .three{
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.4s;
+    }
+
+    .menu-toggle{
+        width: 40px;
+        height: 30px;
+        margin-right: 30px;
+    }
+
+    .menu-section.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 40vh;
+        background-color: #203C56;
+        z-index: 2;        
+    }
+
+    .menu-section.on nav{
+        display: block;
+        
+                
+    }
+    .menu-section.on .menu-toggle{
+        position: absolute;
+        top: 22px;
+        right: 0px;
+        
+        
+    }
+    .menu-section.on .menu-toggle .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two{
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+    .menu-section.on nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+        
+    }
+        
+
+    .menu-section.on  nav ul a{
+        transition-duration: 0.3s;
+        font-size: 2.2rem;  
+          
+    }
+
+    
+
+    .titulo{
+        position: absolute;
+        left: 20%;
+        z-index: 1;
+    }
+
+    .titulo h1{
+        font-size: 6.0rem;
+    }
+
+    .titulo span{
+        font-size: 10.0rem; 
+    } 
+
+    .convenios-caixa{
+        width: 300px; 
+    }
+    .convenios-caixa ul{
+        width: 300px; 
+    }
+
+    .contato-content p{
+        font-size: 1.5rem;
+        margin: 5px auto;
+    }
+
+    .midias-sociais img{
+        width: 15%;
+        height: 15%;
+    }
+}
+
+@media (max-width: 481px){
+
+    .menu-section.on  nav ul a{
+        
+        font-size: 2.0rem; 
+    }
+
+
+    .titulo{
+        position:absolute;
+        top:50%;
+        left: 10%;
+    }
+    .titulo h1{
+        font-size: 3.0rem;
+    }
+
+    .titulo span{
+        font-size: 6.0rem;
+    }
+
+
+    .about-content p{
+        margin-left: 5px;
+        margin-right: 25px;
+        font-size: 1.3rem;
+    }
+
+    .search-box{
+        width: 
+    }
+
+    .search-box input{
+        width: 90%;
+    }
+
+    .convenios-caixa {
+        margin: 15px auto;
+        justify-content: center;
+    }
+    
+    .convenios-content ul{
+        min-width: 250px;
+     }
+     .midias-sociais{
+        gap:20px;
+     }
+     .midias-sociais img{
+        width: 15%;
+        height: 15%;
+      
+     }
+     .contato-content h3{
+        font-size: 2.5rem;
+        margin: auto;
+     }
+    .contato-content p{
+        font-size: 1.0rem;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 321px){
+    .titulo h1{
+            font-size: 4.0rem;
+            padding: 0 0 30px 0;      
+    }
+
+    .titulo span{
+            font-size: 8.0rem; 
+    } 
+
+    .about-content{
+            margin-right: 10px;
+    }
+
+    .trabalhe-content button{
+            margin-right: 20px;  
+    }
+
+    .convenios-content  input{
+        width: 80%;
+    }
+
+    .convenios-content ul{
+        min-width: 280px;
+     }
 }
