@@ -549,7 +549,7 @@ footer{
         top: 0;
         left: 0;
         width: 100vw;
-        height: 40vh;
+        height: 100vh;
         background-color: #203C56;
         z-index: 2;        
     }
@@ -577,23 +577,30 @@ footer{
     .menu-section.on .menu-toggle .three{
         transform: rotate(-45deg) translate(8px, -9px);
     }
+    .menu-section.on .nav-container{
+        display: flex;
+        justify-self: center;
+        height: 100vh;
+    }
+    .menu-section.on nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
     .menu-section.on nav ul{
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        
-        
+        justify-content: center;
+        gap: 70px;               
     }
         
 
     .menu-section.on  nav ul a{
         transition-duration: 0.3s;
-        font-size: 2.2rem;  
-          
+        font-size: 3.0rem;   
     }
-
-    
-
+   
     .titulo{
         position: absolute;
         left: 20%;
